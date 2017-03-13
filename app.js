@@ -1,5 +1,5 @@
 var express = require('express');
-var todoControler = require('./controlers/todoControler');
+var todoController = require('./controllers/todoController');
 
 var app = express();
 
@@ -10,7 +10,7 @@ app.set('view engine', 'ejs');
 app.use(express.static('./public'));
 
 //Fire controllers
-todoControler(app);
+todoController(app);
 
 //Listen to port
 app.listen(3000);
